@@ -1,3 +1,6 @@
+<%@ page import="domain.model.Lid" %>
+<%@ page import="domain.db.LidDB"%>
+<%@ page import="java.util.ArrayList" %>
 <%--
   Created by IntelliJ IDEA.
   User: senne
@@ -30,6 +33,7 @@
 </header>
 <h2>Overzicht leden</h2>
 <table>
+    <thead>
     <tr>
         <th>Naam</th>
         <th>Voornaam</th>
@@ -38,8 +42,11 @@
         <th>Pas aan</th>
         <th>Verwijder</th>
     </tr>
+    </thead>
+    <tbody>
+    <% for(Lid lid: leden){%>
     <tr>
-        <td>...</td>
+        <td><%= lid.getVooraam() %></td>
         <td>...</td>
         <td>...</td>
         <td>...</td>
@@ -62,6 +69,8 @@
         <td>Pas aan</td>
         <td >X</td>
     </tr>
+    </tbody>
+
 </table>
 <footer>
     <h3>Web ontwikkeling 2 - 2022 - Geerts Senne</h3>
