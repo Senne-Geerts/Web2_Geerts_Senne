@@ -1,5 +1,8 @@
 package domain.model;
 
+import jdk.vm.ci.meta.Local;
+
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Lid {
@@ -9,9 +12,38 @@ public class Lid {
     private Date geboortedatum;
 
     public Lid(String voornaam, String achternaam, String afdeling, Date geboortedatum){
-        this.voornaam=voornaam;
-        this.achternaam=achternaam;
-        this.afdeling=afdeling;
-        this.geboortedatum=geboortedatum;
+        setVoornaam(voornaam);
+        setAchternaam(achternaam);
+        setAfdeling(afdeling);
+        setGeboortedatum(geboortedatum);
     }
+
+    public void setVoornaam(String voornaam){
+        if(voornaam==null || voornaam.isEmpty()){
+            throw new IllegalArgumentException("Voornaam moet ingevold worden");
+        }
+        this.voornaam=voornaam;
+    }
+
+    public void setAchternaam(String achternaam){
+        if(achternaam==null || achternaam.isEmpty()){
+            throw new IllegalArgumentException("Achternaam moet ingevold worden");
+        }
+        this.achternaam=achternaam;
+    }
+
+    public void setAfdeling(String afdeling){
+        if(afdeling==null || afdeling.isEmpty()){
+            throw new IllegalArgumentException("Afdeling moet ingevuld worden");
+        }
+    }
+
+    public void setGeboortedatum(Date geboortedatum) {
+        this.geboortedatum = geboortedatum;
+    }
+
+    public String getVoornaam(){return voornaam;}
+    public String getAchternaam(){return achternaam;}
+    public String getAfdeling(){return afdeling;}
+    public Date getGeboortedatum(){return geboortedatum;}
 }
