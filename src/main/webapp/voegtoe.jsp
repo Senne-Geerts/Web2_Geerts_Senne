@@ -29,13 +29,13 @@
 </header>
 
 <div class="form-container">
-    <form action="#">
+    <form method="post" action="Leden">
         <div class="row">
             <div class="col-25">
                 <label for="voornaam">Voornaam</label>
             </div>
             <div class="col-75">
-                <input type="text" id="voornaam" name="firstname" placeholder="Uw voornam">
+                <input type="text" id="voornaam" name="voornaam" placeholder="Uw voornaam">
             </div>
         </div>
         <div class="row">
@@ -67,7 +67,7 @@
                 <label for="gdatum">Geboortedatum</label>
             </div>
             <div class="col-75">
-                <input type="date" id="gdatum" name="geboortedtaum"
+                <input type="date" id="gdatum" name="geboortedatum"
                        value="2012-09-01"
                        min="2003-01-01" max="2022-12-31">
             </div>
@@ -78,7 +78,7 @@
     </form>
 </div>
 <footer>
-    <h3>Web ontwikkeling 2 - 2022 - Geerts Senne</h3>
+    <h3>Webontwikkeling 2 - 2022 - Geerts Senne</h3>
 </footer>
 </body>
 </html>

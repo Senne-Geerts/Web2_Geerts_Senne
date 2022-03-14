@@ -1,7 +1,8 @@
 package domain.db;
-
+import  ui.controller.Leden;
 import domain.model.Lid;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
@@ -9,9 +10,9 @@ import java.util.Date;
 public class LidDB {
     private ArrayList<Lid> leden = new ArrayList<>();
     public LidDB(){
-        Lid senne = new Lid("Senne","Geerts", "Keti",new Date(2006,04,16));
-        Lid jan = new Lid("Jan", "Janssens", "Speelclub",new Date(2012,12,2));
-        Lid piet = new Lid("Piet","Den Boer", "Rakwi",new Date(2010, 02,23));
+        Lid senne = new Lid("Senne","Geerts", "Keti","2006-04-16");
+        Lid jan = new Lid("Jan", "Janssens", "Speelclub","2009-03-04");
+        Lid piet = new Lid("Piet","Den Boer", "Rakwi","2009-05-20");
 
         leden.add(senne);
         leden.add(jan);

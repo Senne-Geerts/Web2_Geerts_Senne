@@ -1,1 +1,3 @@
-/home/senne/Documents/UCLL/2021-2022/Semester2/WEB2/Website/Geerts_Senne/src/main/java/com/example/geerts_senne/HelloServlet.java
+/home/senne/Documents/UCLL/2021-2022/Semester2/WEB2/Website/Geerts_Senne/src/main/java/domain/db/LidDB.java
+/home/senne/Documents/UCLL/2021-2022/Semester2/WEB2/Website/Geerts_Senne/src/main/java/domain/model/Lid.java
+/home/senne/Documents/UCLL/2021-2022/Semester2/WEB2/Website/Geerts_Senne/src/main/java/ui/controller/Leden.java

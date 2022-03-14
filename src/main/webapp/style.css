@@ -11,7 +11,7 @@ h1{
     background-color: #00008B ;
 }
 nav{
-   overflow: hidden;
+    overflow: hidden;
     background-color: #00008B;
 }
 
@@ -176,7 +176,7 @@ table th {
     }
 
     nav ul li{
-       margin: 0.5rem;
+        margin: 0.5rem;
     }
 }
 

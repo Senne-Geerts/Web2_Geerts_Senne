@@ -1,6 +1,7 @@
 <%@ page import="domain.model.Lid" %>
 <%@ page import="domain.db.LidDB"%>
 <%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: senne
@@ -35,8 +36,8 @@
 <table>
     <thead>
     <tr>
-        <th>Naam</th>
         <th>Voornaam</th>
+        <th>Achternaam</th>
         <th>Geboortedatum</th>
         <th>Afdeling</th>
         <th>Pas aan</th>
@@ -44,36 +45,23 @@
     </tr>
     </thead>
     <tbody>
-    <% for(Lid lid: leden){%>
-    <tr>
-        <td><%= lid.getVooraam() %></td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>Pas aan</td>
-        <td >X</td>
-    </tr>
-    <tr>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>Pas aan</td>
-        <td >X</td>
-    </tr>
-    <tr>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>...</td>
-        <td>Pas aan</td>
-        <td >X</td>
-    </tr>
+        <%
+            String tableDate = "";
+            List<Lid> ledenLijst = (ArrayList<Lid>) request.getAttribute("result");
+            for(Lid lid: ledenLijst){
+                tableDate += String.format("<tr><td>%s</td><td>%s</td><td>%s</td><td>%s<td>%s</td><td>%s</td>"
+                        ,lid.getVoornaam(),lid.getAchternaam(), lid.getGeboortedatum(), lid.getAfdeling(),"Pas aan", "X");
+            }
+        %>
+        <%=tableDate%>
     </tbody>
-
 </table>
+<p>Totaal aantal leden:</p>
+<p>Het jonste lid:</p>
+<p>Het oudste lid:</p>
+<p>De grooste groep:</p>
 <footer>
-    <h3>Web ontwikkeling 2 - 2022 - Geerts Senne</h3>
+    <h3>Webontwikkeling 2 - 2022 - Geerts Senne</h3>
 </footer>
 </body>
 </html>

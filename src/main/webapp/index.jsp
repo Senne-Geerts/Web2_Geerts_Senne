@@ -22,12 +22,8 @@
 </header>
 <p>Op deze website kunnen we de ledenlijst van onze vereniging aanpassen of bekijken. Zo zullen we alles kunnen
     afstemmen op het aantal leden. We kunnen dan ook bepaalde berekeningen maken zoals hieronder.</p>
-<p>Totaal aantal leden:</p>
-<p>Het jonste lid:</p>
-<p>Het oudste lid:</p>
-<p>De grooste groep:</p>
 <footer>
-    <h3>Web ontwikkeling 2 - 2022 - Geerts Senne</h3>
+    <h3>Webontwikkeling 2 - 2022 - Geerts Senne</h3>
 </footer>
 </body>
 </html>
